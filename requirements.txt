@@ -1,0 +1,53 @@
+# FastAPI Core
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+
+# Database
+motor==3.3.2  # Async MongoDB driver
+pymongo==4.6.1
+beanie==1.24.0  # ODM for MongoDB with Pydantic
+
+# Authentication & Security
+python-jose[cryptography]==3.3.0
+passlib[bcrypt]==1.7.4
+python-dotenv==1.0.0
+bcrypt==4.0.1  # Fixed version for passlib compatibility
+
+# Validation
+pydantic==2.5.3
+pydantic-settings==2.1.0
+email-validator==2.1.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3
+
+# WebSockets for real-time updates
+websockets==12.0
+
+# ===== Phase 1 Dependencies (FREE SERVICES) =====
+
+# Excel file handling
+pandas==2.1.4
+openpyxl==3.1.2  # Excel read/write support
+xlrd==2.0.1  # Legacy Excel support
+
+# AI Integration - GROQ (FREE & FASTEST!)
+groq>=1.1.1  # Groq API - Fastest LLM inference with LPU (500-1000+ tokens/sec!)
+
+# Payment Gateway - RAZORPAY (Test Mode)
+razorpay==1.4.2  # Razorpay Python SDK for payment processing
+
+# File upload handling (temporary storage)
+aiofiles==23.2.1
+Pillow==10.2.0  # Image processing
+
+# IoT/MQTT integration (free)
+paho-mqtt==1.6.1
+
+# Logging
+loguru==0.7.2
+
+# Note: CORS is built into FastAPI via fastapi.middleware.cors
+# No additional package needed!
